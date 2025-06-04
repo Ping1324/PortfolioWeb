@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON WEB -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <!-- LIBRERIAS ICONOs fontello y font awasome -->
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- PAGINAS CSS -->
+    <link rel="stylesheet" href="css/works.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/aboutme.css" />
+    <link rel="stylesheet" href="css/welcome.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
+
+    <link rel="stylesheet" href="css/modelado.css" />
+
+    <title>Caleb | Home</title>
+  </head>
+
+  <body class="page-index">
+    <header class="header1">
+      <h1 class="logo"><a>Caleb</a></h1>
+
+      <!-- checkbox para control hamburguesa -->
+      <input type="checkbox" id="menu" />
+
+      <!-- icono hamburguesa -->
+      <label class="icon-menu" for="menu">&#9776;</label>
+
+      <!-- menú de navegación -->
+      <nav class="navbar" id="top">
+        <ul>
+          <li>
+            <a id="btn1" href="#apartado1" onclick="document.getElementById('menu').checked=false;">Trabajos</a>
+          </li>
+          <li>
+            <a id="btn2" href="#apartado2" onclick="document.getElementById('menu').checked=false;">Sobre mí</a>
+          </li>
+          <li>
+            <a href="#apartado3" id="btn3" onclick="document.getElementById('menu').checked=false;">Contacto</a>
+          </li>
+          <li>
+            <a href="#apartado4" id="btn4" onclick="document.getElementById('menu').checked=false;">Galeria</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="apartado apartadoWelcome" id="home">
+        <h1 class="h1 fade-in" id="apartado0">-- Welcome to my collection</h1>
+        <section class="intro-section">
+          <div class="intro-box1 fade-in">
+            <div class="pnombre">
+              <p>Hola! Me llamo Caleb</p>
+            </div>
+            <div class="ptexto">
+              <p>Soy artista<br />multidisciplinar<br />Based in Spain</p>
+            </div>
+          </div>
+
+          <div class="intro-box2 fade-in">
+            <div class="intro-right">
+              <img src="img/index/logoneo-bestiarioBlancoCaleb.png" alt="Caleb Illustration" />
+              <p>
+                Diseño experiencias 3D inmersivas y contenido dinámico que lleva proyectos de videojuegos y marcas hacia
+                nuevos territorios digitales, donde la interacción no tiene límites.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="iconos-plus-container">
+          <span class="icono individual-icono delay-1"><i class="fas fa-plus"></i></span>
+          <span class="icono individual-icono delay-2"><i class="fas fa-plus"></i></span>
+          <span class="icono individual-icono delay-3"><i class="fas fa-plus"></i></span>
+        </div>
+      </section>
+
+      <section class="apartado" id="works">
+        <h1 class="h1" id="apartado1">--Trabajos destacados</h1>
+
+        <h1 class="h1">Modelado</h1>
+        <section class="cajaTrabajos fade-in">
+          <a href="modelado-catedral.html">
+            <div class="trabajo trabajo1">
+              <img id="carouselModeladoCatedral" class="imagen imagen1" src="img/index/catedral-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Escenografia 3D para videojuegos</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="modelado-motorista.html">
+            <div class="trabajo trabajo2">
+              <img id="carouselMotorista" class="imagen imagen2" src="img/index/motorista-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Motorista-Game Jam</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="modelado-hana.html">
+            <div class="trabajo trabajo3">
+              <img id="carouselHana" class="imagen imagen3" src="img/index/hana-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Hana - Modelado de personaje</p>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <h1 class="h1">Diseño</h1>
+        <section class="cajaTrabajos fade-in">
+          <a href="diseño-filmoteca.html">
+            <div class="trabajo trabajo1">
+              <img id="carouselFilmoteca" class="imagen imagen5" src="img/index/filmoteca-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">La filmoteca - Pagina web con HTML y CSS</p>
+              </div>
+            </div>
+          </a>
+          <a href="diseño-gokoan.html">
+            <div class="trabajo trabajo2">
+              <img id="carouselGokoan" class="imagen imagen6" src="img/index/gokoan-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">GoKoan - Estrategias de Marketing y Redes Sociales</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="diseño-neo-bestiario.html">
+            <div class="trabajo trabajo3">
+              <img id="carouselNeoBestiario" class="imagen imagen7" src="img/index/neo-bestiario-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Neo-bestiario. Maquetacion e implementacion de RV</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="diseño-nok.html">
+            <div class="trabajo trabajo1">
+              <img id="carouselNok" class="imagen imagen8" src="img/index/nok-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Diseño de tipografia</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="diseño-revista29.html">
+            <div class="trabajo trabajo1">
+              <img id="carouselRevista29" class="imagen imagen8" src="img/index/revista29-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Revista 29 - Maquetación</p>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <h1 class="h1" id="tituloIlustraciones">Ilustraciones</h1>
+
+        <section class="cajaTrabajos fade-in">
+          <a href="#">
+            <div class="trabajo trabajo1">
+              <img class="imagen imagen8" src="img/index/ilustracion1-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Mi payaso, 2023</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="trabajo trabajo2">
+              <img class="imagen imagen8" src="img/index/ilustracion2-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Prohibido montar en dinosaurio</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="trabajo trabajo3">
+              <img class="imagen imagen8" src="img/index/ilustracion3-cover.png" />
+              <div class="cajagristexto">
+                <p class="p1">Aeropuerto de Valencia. Ed.Vinatea</p>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <div class="iconos-plus-container">
+          <span class="icono individual-icono delay-1"><i class="fas fa-plus"></i></span>
+          <span class="icono individual-icono delay-2"><i class="fas fa-plus"></i></span>
+          <span class="icono individual-icono delay-3"><i class="fas fa-plus"></i></span>
+        </div>
+      </section>
+
+      <section class="apartado">
+        <h1 class="h1" id="apartado2">-- Diseño con Propósito</h1>
+
+        <section class="aboutme-section">
+          <div class="left fade-in">
+            <p class="p1">
+              <br /><br />Diseño para comunicar, para emocionar y para conectar. A través del modelado 3D, la realidad
+              virtual, el diseño gráfico y la creación de experiencias digitales, busco transformar ideas en realidades
+              que impacten. <br />Cada proyecto que desarrollo nace con intención, combinando técnica y visión artística
+              para generar experiencias significativas y memorables. Mi trabajo refleja una mezcla de innovación,
+              identidad y funcionalidad, con el objetivo de aportar valor real en cada interacción<br /><br /><br />
+            </p>
+            <br />
+            <a class="fade-in" href="docs/cvCaleb.pdf" target="_blank">
+              <button class="button" style="vertical-align: middle">
+                <p>Descargar CV</p>
+              </button>
+            </a>
+            <br />
+          </div>
+          <div class="right">
+            <img src="img/index/logoneo-bestiarioBlancoCaleb.png" class="imgCaleb" alt="Imagen sobre mi" />
+          </div>
+
+          <div class="skills-section">
+            <div class="competencias">
+              <h2 class="fade-in">Competencias</h2>
+              <ul class="tools fade-in">
+                <li>Diseño gráfico</li>
+                <li>Diseño gráfico</li>
+                <li>Dirección de arte</li>
+                <li>Ilustración</li>
+                <li>Branding</li>
+                <li>Marketing digital y redes sociales</li>
+                <li>Proyectos inmersivos en RV</li>
+                <li>UX/UI</li>
+                <li>Edición y montaje de vídeo</li>
+                <li>Animación y motion graphics</li>
+              </ul>
+            </div>
+
+            <div class="stack">
+              <h2 class="fade-in">Herramientas que manejo</h2>
+              <div class="stack-grid fade-in">
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/logo_figma.png" alt="Figma" />
+                  <div><strong>Figma</strong><br /><span>Design</span></div>
+                </div>
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/logo_adobeilustrator.png" alt="Illustrator" />
+                  <div><strong>Illustrator</strong><br /><span>Adobe</span></div>
+                </div>
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/logo_adobeeffects.png" alt="After Effects" />
+                  <div><strong>After Effects</strong><br /><span>Video FX</span></div>
+                </div>
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/blender.png" alt="Blender" />
+                  <div><strong>Blender</strong><br /><span>Modelado</span></div>
+                </div>
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/logo_adobeindesing.png" alt="MidJourney" />
+                  <div><strong>InDesing</strong><br /><span>Diseño</span></div>
+                </div>
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/adobePremiere.png" alt="Premiere Pro" />
+                  <div><strong>Premier Pro</strong><br /><span>Editor de Videos</span></div>
+                </div>
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/logo_adobephotoshop.png" alt="Photoshop" />
+                  <div><strong>Photoshop</strong><br /><span>Editor de fotos</span></div>
+                </div>
+                <div class="stack-item">
+                  <img src="img/index/logos_iconfinder/codeFondoBlanco.png" alt="Notion" />
+                  <div><strong>HTML & CSS</strong><br /><span>Diseño web</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="iconos-plus-container">
+          <span class="icono individual-icono delay-1"><i class="fas fa-plus"></i></span>
+          <span class="icono individual-icono delay-2"><i class="fas fa-plus"></i></span>
+          <span class="icono individual-icono delay-3"><i class="fas fa-plus"></i></span>
+        </div>
+      </section>
+
+      <section class="apartado" id="apartado4">
+        <h1 class="h1">-- Galería</h1>
+        <div class="galeriaTotal fade-in">
+          <div class="cajaboton">
+            <button id="anterior" class="btn"><i class="fas fa-minus"></i></button>
+          </div>
+
+          <div class="galeria">
+            <div class="caja_img">
+              <img id="imagen" src="img/index/ilustracion1-cover.png" alt="" />
+            </div>
+
+            <div class="cajaMiniaturas">
+              <img class="miniatura" src="img/index/ilustracion1-cover.png" alt="" />
+              <img class="miniatura" src="img/index/ilustracion2-cover.png" alt="" />
+              <img class="miniatura" src="img/index/ilustracion3-cover.png" alt="" />
+              <img class="miniatura" src="img/index/ilustracion4-hana-cover.png" alt="" />
+              <img class="miniatura" src="img/index/ilustracion5-nok-cover.png" alt="" />
+              <img class="miniatura" src="img/index/ilustracion6-fraus-cover.png" alt="" />
+            </div>
+          </div>
+          <div class="cajaboton">
+            <<button id="siguiente" class="btn"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <div class="iconos-plus-container">
+        <span class="icono individual-icono delay-1"><i class="fas fa-plus"></i></span>
+        <span class="icono individual-icono delay-2"><i class="fas fa-plus"></i></span>
+        <span class="icono individual-icono delay-3"><i class="fas fa-plus"></i></span>
+      </div>
+
+      <div class="linea-animada" id="lineaAnimada"></div>
+    </main>
+
+    <footer class="footer1">
+      <section class="apartado contact-section">
+        <div id="apartado3" class="left">
+          <h1 class="h1footer1">Let’s Connect</h1>
+        </div>
+
+        <div class="right">
+          <p class="pfooter1">Email:</p>
+          <h5 class="h5footer1">ping26ms@gmail.com</h5>
+          <br />
+          <p class="pfooter1">Teléfono:</p>
+          <h5 class="h5footer1">+34 645 876 077</h5>
+          <br />
+          <p class="pfooter1">Localización:</p>
+          <h5 class="h5footer1">Valencia, Spain</h5>
+          <br />
+        </div>
+      </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/carrouselimgIndex.js"></script>
+    <script src="js/lineaAnimadaIndex.js"></script>
+    <script src="js/headerScrolled1.js"></script>
+    <script src="js/fade-in.js"></script>
+  </body>
+</html>

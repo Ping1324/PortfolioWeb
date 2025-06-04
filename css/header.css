@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-plus i {
+  color: gray;
+}
+
+.iconos-plus-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.individual-icono {
+  font-size: 28px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecerIcono 0.6s forwards;
+  transition: transform 0.3s ease;
+}
+
+.page-index .individual-icono i {
+  color: white;
+}
+.page-modelado .individual-icono i {
+  color: black;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+.delay-2 {
+  animation-delay: 1.2s;
+}
+.delay-3 {
+  animation-delay: 1.4s;
+}
+
+@keyframes aparecerIcono {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  /* Necesario para permitir retrasos distintos */
+  will-change: opacity, transform;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.trabajo {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-height: 360px;
+}
+
+.trabajo:hover {
+  transform: translateY(-8px);
+}
+
+main,
+section,
+.apartado,
+.cajaTrabajos {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.section {
+  margin-bottom: 80px;
+}
+
+#apartado1,
+#apartado2,
+#apartado3 {
+  transition: font-size 0.5s ease;
+}
+
+#apartado1.letraGrande,
+#apartado2.letraGrande,
+#apartado3.letraGrande {
+  font-size: 42px;
+  transition: font-size 0.5s ease;
+}
+
+#apartado3 {
+  color: white;
+}
+
+.apartado {
+  padding-bottom: 20px;
+}
+
+.year,
+.titleWork,
+.description,
+.herramientasUtilizadas,
+.titleOtrosProyectos {
+  font-optical-sizing: auto;
+  color: black;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-optical-sizing: auto;
+}
+.h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.h1black {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+}
+.p1,
+.intro-box1 .p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.8;
+}
+.pblack {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.8;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 350;
+}
+h5 {
+  font-size: 16px;
+  color: gray;
+}
+
+body {
+  font-family: "Spline Sans Mono", monospace;
+  background-color: black;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+  padding: 10px 20px;
+  z-index: 1000;
+  height: 70px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.header1 {
+  color: white;
+}
+.header2 {
+  background-color: black;
+  color: white;
+}
+
+.header1.headerScrolled1 {
+  background-color: rgba(235, 234, 234, 0.58);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.header2.headerScrolled2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.header2.header-blur {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.header2 .logo a {
+  color: black;
+}
+.header2 .logo a {
+  color: white;
+  opacity: 0.8;
+}
+
+main {
+  padding: 20px 300px;
+  width: 100%;
+}
+
+.logo a {
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.logo a:hover {
+  color: gray;
+}
+
+/* checkbox oculto */
+input#menu {
+  display: none;
+}
+
+/* icono hamburguesa */
+label.icon-menu {
+  font-size: 28px;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+  display: none; /* por defecto oculto */
+  z-index: 1100; /* mayor que nav para estar encima */
+  transition: transform 0.3s ease;
+}
+
+/* menú normal desktop */
+nav {
+  width: 100%;
+}
+
+nav.navbar {
+  display: flex;
+  width: 450px;
+}
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+nav.navbar ul li {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.header1 nav.navbar ul li a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.header2 nav.navbar ul li a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.header1 nav.navbar ul li a:hover {
+  color: gray;
+  text-decoration: none;
+}
+.header2 nav.navbar ul li a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+#scrollToTop1 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: rgb(188, 59, 59);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (width<= 1300px) {
+  main {
+    padding: 20px 80px;
+  }
+
+  .pnombre {
+    margin-top: 40px;
+  }
+}
+
+/* estilos para móvil del nav */
+@media (width<= 768px) {
+  main {
+    padding: 40px 20px;
+  }
+  label.icon-menu {
+    display: block; /* siempre visible */
+    position: relative;
+  }
+  label .icon-menu:hover {
+    /* no funciona */
+    color: gray;
+  }
+
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    z-index: 1050; /* debajo del label */
+    padding-top: 50px; /* para que no tape el icono */
+  }
+
+  nav.navbar ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav.navbar ul li {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  /* cuando el checkbox está marcado, mostrar menú */
+  input#menu:checked ~ nav.navbar {
+    left: 0;
+  }
+}

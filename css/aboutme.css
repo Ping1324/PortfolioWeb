@@ -1,0 +1,220 @@
+.aboutme-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: auto;
+  color: white;
+
+}
+
+.aboutme-section .left,
+.aboutme-section .right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.aboutme-section .right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right .imgCaleb {
+   background-image: url("../img/index/logoneo-bestiarioGrisoCaleb.png");
+   background-position: center;
+   background-size: cover; 
+  width: 350px;
+  height: 350px ;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #564BCF;
+  border: none;
+  text-align: center;
+
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: px;
+}
+
+.button p{
+font-family: "Spline Sans Mono", monospace;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+    color:white;
+}
+
+.button p:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover p {
+  padding-right: 25px;
+}
+
+.button:hover p:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.skills-section {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+
+}
+
+.tools li {
+  background-color: #1a1a1a;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  border: 1px solid #333;
+}
+
+.tools li:hover {
+  background-color: #2a2a2a;
+  border-color: #555;
+}
+
+
+
+.competencias h2{
+  margin-bottom:24px;
+  color:white;
+  opacity:1;
+}
+.stack h2{
+  margin-top:24px;
+  margin-bottom:24px;
+  color:white;
+  opacity:1;
+}
+
+.stack {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+
+
+}
+
+.stack-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #0f0f0f;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+.stack-item:hover{
+  background-color: #2a2a2a;
+  border-color: #555;
+}
+
+.stack-item img {
+  width: 36px;
+  height: 36px;
+}
+
+.stack-item p {
+  color: white;
+}
+
+.stack-item p {
+  color: gray;
+}
+
+
+@media (max-width: 1100px) {
+  .aboutme-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .aboutme-section .left,
+  .aboutme-section .right {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .right .imgCaleb {
+
+  width: 200px;
+  height: 200px ;
+  margin-top:30px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .aboutme-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    max-width: 95%;
+  }
+
+  .aboutme-section h1 {
+    text-align: center;
+ 
+  }
+
+  .aboutme-section .left,
+  .aboutme-section .right {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .imgCaleb {
+    width: 100%;
+    height: 200px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .right .imgCaleb {
+
+  width: 150px;
+  height: 150px ;
+  margin-top:30px;
+}
+
+}

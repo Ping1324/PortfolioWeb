@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer1 {
+  z-index: 2;
+  background: white;
+  opacity: 0.9;
+  color: black;
+}
+.footer2 {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 20;
+  margin-top: 300px;
+}
+
+.h1footer1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  margin-top: 12px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1000px;
+  margin: auto;
+}
+
+/* Responsive */
+
+@media (width<= 1200px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 20px;
+    width: 700px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .pagina-works {
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+@media (width<= 768px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+  }
+  .footer2 {
+    margin-top: 150px;
+  }
+}

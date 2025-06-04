@@ -1,0 +1,282 @@
+
+.pagina-works{
+  padding: 0;
+  /*padding-bottom: 100px; espacio para que no tape el footer */
+
+
+}
+.logo a{
+text-decoration:none;
+}
+#titleWork{ 
+  font-size: 32px;
+  transition: font-size 0.4s ease;
+  margin-bottom: 24px;
+
+}
+
+#titleWork.letraGrande {
+  font-size: 50px;
+}
+
+.back-button.bottom {
+  display: block;
+  text-align: center;
+  margin: 40px auto 24px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.back-button{
+text-decoration:none;
+color:black;
+}
+
+.back-button:hover, .back-button.bottom {
+  color:gray;
+}
+
+.linea-animada {
+  height: 3px;
+  width: 100px;
+  margin: 40px auto;
+  transition: width 1s ease-in-out;
+}
+
+.page-index .linea-animada {
+  background-color: white; /* Línea blanca en index.html */
+}
+
+.page-modelado .linea-animada {
+  background-color: black; /* Línea negra en modelado.html */
+}
+
+.linea-animada.expandir {
+  width: 100%;
+}
+
+.project-info .iconos-plus-container{
+  color:black;
+}
+
+.year, .titleWork, .description, .herramientasUtilizadas, .titleOtrosProyectos{
+  font-optical-sizing: auto;
+  color:black;
+}
+
+.bottom{  
+  float: right; /* Alinea a la derecha */
+  margin-top:-20px;
+}
+
+.hero-image{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:800px;
+  overflow: hidden;
+  z-index: -1;
+  margin-top:70px;
+}
+
+.overlay {
+  
+  position: relative;
+   margin-top: 450px; 
+   margin-left:20px;
+   margin-right:20px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px 80px;
+  transition: all 0.6s ease;
+  backdrop-filter: blur(10px); /* desenfoca el fondo */
+  -webkit-backdrop-filter: blur(10px); /* soporte en Safari */
+}
+
+.expandido {
+  transform: translateY(300px); /* se mueve hacia arriba suavemente */
+  background-color: white;
+  margin:0;
+  padding: 40px 250px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.foto-about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:15px;
+  margin-top:24px;
+}
+
+
+.foto-about img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.year {
+  color: gray;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.project-info p, .project-info h1, .project-info h1,  .gallery h2 {
+  margin-bottom: 10px;
+}
+
+.project-info .year{
+    color:gray;
+}
+
+.display-tools{
+    margin-top:32px;
+    margin-bottom:84px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:14px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+}
+
+
+
+.tools li {
+  background-color:   #0f0f0f;
+  color: white;
+  opacity: 0.8;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.gallery {
+  margin: 40px 0;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-images img {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-images img:hover {
+  transform: scale(1.03);
+}
+
+.extras {
+  margin-bottom: 40px;
+}
+
+.extras ul {
+  list-style: square inside;
+  margin-top: 10px;
+}
+
+#scrollToTop2 {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color:black;
+  transition: transform 0.3s;
+}
+.cajascrolltotop{
+  width:100%;
+  text-align: center;
+  margin-top:20px;
+
+}
+
+#scrollToTop2:hover {
+  transform:translateY(-10px);
+  color:gray;
+}
+.back-button a{
+  text-decoration:none;
+  color:black;
+}
+.back-button a:hover {
+  text-decoration: none;
+  color:gray;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+
+/* Ajusta padding y márgenes generales */
+  .overlay {
+    padding: 30px 40px;
+    margin-top: 350px; 
+  }
+
+  
+
+  /* Grid de la galería pasa a 2 columnas */
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* Títulos ligeramente más pequeños */
+  #titleWork {
+    font-size: 28px;
+  }
+  #titleWork.letraGrande {
+    font-size: 42px;
+  }
+    .icon-menu {
+    font-size: 1.8em;
+  }
+
+
+}
+
+@media (max-width: 768px){
+  .gallery-images {
+    grid-template-columns: 1fr;
+    gap:15px;
+  }
+  .overlay {
+    padding: 30px 40px;3
+    margin-top: 250px; 
+  }
+
+}
+
+
+
+
